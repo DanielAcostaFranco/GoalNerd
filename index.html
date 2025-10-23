@@ -1,0 +1,142 @@
+<!-- Jonathan Cardiel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalNerd - All the Stats. One Place</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen pb-16 md:pb-0">
+
+    <header id="desktop-nav" class="bg-white border-b border-gray-200 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-gray-900 tracking-tight">GoalNerd</span>
+                </div>
+                <nav class="flex space-x-8">
+                    <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors p-1 border-b-2 border-transparent hover:border-indigo-600">Players</a>
+                    <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors p-1 border-b-2 border-transparent hover:border-indigo-600">Leagues</a>
+                    <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors p-1 border-b-2 border-transparent hover:border-indigo-600">Games</a>
+                    <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors p-1 border-b-2 border-transparent hover:border-indigo-600">My Stats</a>
+                </nav>
+                <div id="desktop-search-container" class="w-64">
+                    <div class="relative">
+                        <input type="search" placeholder="Search..." class="w-full py-2 pl-4 pr-10 border border-gray-300 rounded-lg text-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header id="mobile-header" class="bg-white border-b border-gray-200 md:hidden sticky top-0 z-10">
+        <div class="px-4 py-3 flex justify-between items-center">
+            <span class="text-xl font-bold text-gray-900">GoalNerd</span>
+            <button class="text-gray-600 hover:text-gray-900">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+
+        <section class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">All the Stats. One Place</h1>
+            <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+                GoalNerd is a soccer stat tracking platform designed to give fans a smarter way to follow the game they love.
+            </p>
+        </section>
+
+        <div class="mb-8 md:hidden">
+            <div class="relative">
+                <input type="search" placeholder="Search for teams, players, or matches..." class="w-full py-3 pl-4 pr-12 border border-gray-300 rounded-xl text-base focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+                <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    <i data-lucide="search" class="w-6 h-6"></i>
+                </span>
+            </div>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="stat-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="p-6">
+                    <h2 class="text-lg font-semibold text-gray-700 mb-4 border-b pb-2">Today's Game</h2>
+                    <div class="bg-gray-200 h-40 w-full rounded-lg flex items-center justify-center text-gray-500 mb-4">
+                        <i data-lucide="monitor" class="w-8 h-8 mr-2"></i> Match Graphic
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Game Name</h3>
+                    <p class="text-sm text-indigo-600 font-medium">League/Competition</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-sm text-gray-500">Kick-off: 19:30 UTC</span>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors">
+                            View Stats
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="p-6">
+                    <h2 class="text-lg font-semibold text-gray-700 mb-4 border-b pb-2">Spotlight Player</h2>
+                    <div class="bg-gray-200 h-40 w-full rounded-lg flex items-center justify-center text-gray-500 mb-4">
+                        <i data-lucide="user" class="w-8 h-8 mr-2"></i> Player Image
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Player Name</h3>
+                    <p class="text-sm text-indigo-600 font-medium">Team Position</p>
+                    <div class="mt-4">
+                        <p class="text-gray-700 text-sm line-clamp-3">
+                            Check out the latest performance metrics for our spotlight player who has been dominating the league this season. From goals to assists and possession stats, see why they are the Player of the Day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="md:hidden mt-8 p-6 bg-white rounded-xl shadow-lg">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4">Latest News</h2>
+            <p class="text-sm text-gray-600 space-y-3">
+                <span class="block bg-gray-200 h-3 rounded-full w-full"></span>
+                <span class="block bg-gray-200 h-3 rounded-full w-11/12"></span>
+                <span class="block bg-gray-200 h-3 rounded-full w-full"></span>
+                <span class="block bg-gray-200 h-3 rounded-full w-10/12"></span>
+                <span class="block bg-gray-200 h-3 rounded-full w-full"></span>
+            </p>
+            <button class="mt-4 text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors">Read More</button>
+        </section>
+
+    </main>
+
+    <nav id="mobile-nav" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-20 h-16">
+        <div class="flex justify-around items-center h-full max-w-lg mx-auto">
+            <a href="#" class="flex flex-col items-center justify-center text-indigo-600 transition-colors">
+                <i data-lucide="home" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center text-gray-500 hover:text-indigo-600 transition-colors">
+                <i data-lucide="user" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Profile</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center text-gray-500 hover:text-indigo-600 transition-colors">
+                <i data-lucide="info" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Info</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center text-gray-500 hover:text-indigo-600 transition-colors">
+                <i data-lucide="search" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Search</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

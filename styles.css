@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+}
+
+.stat-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #desktop-nav, #desktop-search-container {
+        display: none;
+    }
+}
