@@ -1,106 +1,69 @@
-<!-- Jonathan Cardiel -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoalNerd - Soccer Stats Platform</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="GoalNerd - Soccer stats and analytics for fans who want to stay informed and engaged." />
+  <title>GoalNerd | Soccer Stats Made Smart</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/loader.js" defer></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="nav">
-                <h1 class="logo">GoalNerd</h1>
-                <nav class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#players">Players</a>
-                    <a href="#leagues">Leagues</a>
-                    <a href="#matches">Matches</a>
-                    <a href="#stats">Stats</a>
-                </nav>
-            </div>
+
+  <header>
+    <nav class="main-nav">
+      <div>
+        <a href="index.html"><img class="logo" src="pictures/logo.png" alt="GoalNerd Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="players.html">Players</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="stats.html">My Stats</a></li>
+      </ul>
+      <form class="search-bar" role="search">
+        <input type="text" placeholder="Enter a player, club..." aria-label="Search" />
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>All the Stats. One Place.</h1>
+      <p>
+        Track goals, assists, possession, and performance insights, all in one
+        place!
+      </p>
+    </section>
+
+
+    <section class="featured">
+      <article class="card">
+        <div class="card-image placeholder"></div>
+        <div class="card-content">
+          <p class="card-label">Today's Game</p>
+          <h3 class="card-title">Game Name</h3>
         </div>
-    </header>
+      </article>
 
-    <main class="main">
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">All the Soccer Stats in One Place</h1>
-                <p class="hero-subtitle">Track players, analyze matches, and dive deep into the beautiful game with comprehensive statistics and insights.</p>
-                <div class="search-box">
-                    <input type="text" placeholder="Search players, teams, or matches..." class="search-input">
-                    <button class="search-btn">Search</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">What We Offer</h2>
-                <div class="cards">
-                    <div class="card">
-                        <h3>Player Stats</h3>
-                        <img src="images/ronaldo-headshot.jpg" alt="Player Statistics" class="card-image">
-                        <p>Comprehensive player statistics including goals, assists, pass accuracy, and performance metrics across different competitions.</p>
-                        <button class="btn-primary">View Players</button>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>Live Matches</h3>
-                        <img src="images/steam-stats.jpg" alt="Live Match Data" class="card-image">
-                        <p>Real-time match data, live scores, and detailed match analytics to keep you updated with the latest action.</p>
-                        <button class="btn-primary">Live Matches</button>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>League Tables</h3>
-                        <div class="placeholder-image">League Standings</div>
-                        <p>Current league standings, team performance, head-to-head records, and seasonal statistics for all major competitions.</p>
-                        <button class="btn-primary">View Leagues</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="stats-preview">
-            <div class="container">
-                <h2 class="section-title">Featured Statistics</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>Top Scorer</h3>
-                        <p class="stat-name">Cristiano Ronaldo</p>
-                        <p class="stat-value">28 Goals</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Most Assists</h3>
-                        <p class="stat-name">Kevin De Bruyne</p>
-                        <p class="stat-value">15 Assists</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Clean Sheets</h3>
-                        <p class="stat-name">Alisson Becker</p>
-                        <p class="stat-value">12 Matches</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Pass Accuracy</h3>
-                        <p class="stat-name">Sergio Busquets</p>
-                        <p class="stat-value">94.2%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 GoalNerd. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#privacy">Privacy</a>
-            </div>
+      <article class="card">
+        <div class="card-image placeholder"></div>
+        <div class="card-content">
+          <p class="card-label">Spotlight Player</p>
+          <h3 class="card-title">Player Name</h3>
         </div>
-    </footer>
+      </article>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 GoalNerd. All Rights Reserved.</p>
+  </footer>
 </body>
+
 </html>
